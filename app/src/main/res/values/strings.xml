@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Huffman</string>
+    <string name="title_home">Home</string>
+    <string name="title_result">Result</string>
+    <string name="Text">Tekst</string>
+    <string name="Encode">Zakoduj</string>
+    <string name="Decode">Dekoduj</string>
+    <string name="Huffman_Tree">Drzewo Huffmana</string>
+    <string name="entropy">"Entropia:"</string>
+    <string name="codeLengthMean">"Średnia długość słowa kodowego:"</string>
+    <string name="codeBook">Książka kodowa:</string>
+    <string name="Code">Kod</string>
+</resources>

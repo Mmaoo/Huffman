@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Image.ImageFragment">
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/treeImageFullView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/ic_home_black_24dp"-->
+<!--        tools:layout_editor_absoluteX="81dp"-->
+<!--        tools:layout_editor_absoluteY="210dp">-->
+<!--        <tag android:id="@+id/zoomable" android:value="ZoomableViewTag" />-->
+<!--    </ImageView>-->
+
+    <com.example.huffman.ui.Image.ImageSurfaceView
+        android:id="@+id/imageSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

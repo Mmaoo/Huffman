@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/TextTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/TextEditText"
+                    android:text="@string/Text"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/TextEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:minLines="3"
+                    android:gravity="top|start"
+                    android:scrollbars="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/TextTextView" />
+
+                <Button
+                    android:id="@+id/encodeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Encode" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/decodeButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/Decode" />-->
+
+                <TextView
+                    android:id="@+id/codeLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/codeEditText"
+                    android:text="@string/Code"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="5pt"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/codeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:minLines="3"
+                    android:gravity="top|start"
+                    android:scrollbars="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/TextTextView"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/treeImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:contentDescription="@string/Huffman_Tree"
+                    android:layout_marginTop="5pt"/>
+
+                <TableLayout
+                    android:id="@+id/codeBookTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_marginTop="5pt"
+                    android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                                <TextView android:text="Znak"
+                                    android:textSize="18sp"
+                                    android:textColor="@android:color/primary_text_light"/>
+                                <TextView android:text="Kod"
+                                    android:textSize="18sp"
+                                    android:textColor="@android:color/primary_text_light"/>
+                                <TextView android:text="Prawdopodobieństwo"
+                                    android:textSize="18sp"
+                                    android:textColor="@android:color/primary_text_light"/>
+                        </TableRow>
+<!--                        <include layout="@layout/table_row_code_book" />-->
+<!--                        <include layout="@layout/table_row_code_book" />-->
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/entropyLabelTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:text="@string/entropy"
+                    android:layout_marginTop="5pt"/>
+
+                <TextView
+                    android:id="@+id/entropyTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    tools:text="1.2345"/>
+
+                <TextView
+                    android:id="@+id/codeLengthMeanLabelTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:text="@string/codeLengthMean"
+                    android:layout_marginTop="5pt"/>
+
+                <TextView
+                    android:id="@+id/codeLengthMeanTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    tools:text="1.2345"/>
+
+        </LinearLayout>
+
+</ScrollView>
